@@ -8,7 +8,7 @@ The json server is included in the dev dependency so it will get istalled on run
  `npm install`
 
  After that you need to start a json server on port 3000 with following command
-`json-server --port 3000 src/api/employees/employee.json` 
+`json-server --port 3000 src/api/employees/employees.json` 
 
 once this is done run `npm start`
 
