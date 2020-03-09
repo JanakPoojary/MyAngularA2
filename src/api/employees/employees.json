@@ -1,0 +1,21 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Janakaraj",
+      "lastName": "Poojary",
+      "email": "janakrajpoojari@gmail.com",
+      "contactNumber": 8160551685,
+      "address": "B 87, mathuranagari, Near reliance mega mall,\nOld padra road, Vadodara",
+      "userName": "coldslayer11",
+      "password": "jajajaj",
+      "gender": "male",
+      "qualification": "bachelors",
+      "experience": "2",
+      "codingLanguages": [
+        "Java",
+        "PHP"
+      ]
+    }
+  ]
+}

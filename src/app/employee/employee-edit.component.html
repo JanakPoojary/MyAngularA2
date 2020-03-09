@@ -1,0 +1,58 @@
+<form #form="ngForm">
+    <div class="container">
+    <div class="form-group">
+    <label for="fname">First Name: </label><br>
+    <input type="text" id="fname" name="fname" [(ngModel)]='employee1.firstName'>
+    </div>
+    <div class="form-group">
+    <label for="lname">Last Name: </label><br>
+    <input type="text" id="lname" name="lname" [(ngModel)]='employee1.lastName'>
+    </div>
+    <div class="form-group">
+    <label for="email">Email: </label><br>
+    <input type="email" id="email" name="email" [(ngModel)]='employee1.email'>
+    </div>
+    <div class="form-group">
+    <label for="cno">Contact Number:</label><br>
+    <input type="number" id="cno" name="cno" [(ngModel)]='employee1.contactNumber'>
+    </div>
+    <div class="form-group">
+    <label for="addr">Address:</label><br>
+    <textarea name="address" id="addr" rows="2" cols="17" [(ngModel)]='employee1.address'></textarea>
+    </div>
+    <div class="form-group">
+    <label for="uname">Username:</label><br>
+    <input type="text" id="uname" name="uname" [(ngModel)]='employee1.userName'>
+    </div>
+    <div class="form-group">
+    <label for="pass">Password:</label><br>
+    <input type="password" id="pass" name="pass" [(ngModel)]='employee1.password'>
+      </div>
+
+    Gender:<br>
+    <div class="form-group">
+    <input type="radio" id="male" name="gender" value="male"[(ngModel)]='employee1.gender'>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female" [(ngModel)]='employee1.gender'>
+    <label for="female">Female</label>
+    </div>
+
+    <label for="qual">Qualification:</label><br>
+    <select id="qual" name="qual" [(ngModel)]='employee1.qualification'>
+      <option [value]='qual' *ngFor='let qual of quals'>{{qual}}</option>
+    </select><br><br>
+
+    <label for="exp">Experience:</label><br>
+    <select id="exp" name="exp" [(ngModel)]='employee1.experience'>
+      <option [value]='exp' *ngFor='let exp of exps'>{{exp}}</option>
+    </select><br><br>
+
+    <label for="exp">Coding Languages :</label><br>
+    <select id="codel" name="codel" [(ngModel)]='employee1.codingLanguages' multiple>
+      <option [value]='lang' *ngFor='let lang of langs'>{{lang}}</option>
+    </select><br><br>
+  
+    <input class='btn btn-primary' type="submit" value="Edit" (click)="editEmployee()">
+    </div>
+  </form>
+  
