@@ -4,8 +4,8 @@
 
 You have to start a json-server before running the application to access data
 
-The json server is included in the dev dependency so it will get istalled on running
- `npm install`
+To install json-server run the below command
+ `npm install -g json-server`
 
  After that you need to start a json server on port 3000 with following command
 `json-server --port 3000 src/api/employees/employees.json` 
